@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { MatchesModule } from './matches/matches.module';
+import { DecksModule } from "./decks/decks.module";
 
 @Module({
   imports: [
@@ -11,6 +12,7 @@ import { MatchesModule } from './matches/matches.module';
       { dbname: 'DBNAME' },
     ),
     MatchesModule,
+    DecksModule
   ],
   controllers: [AppController],
   providers: [AppService],
