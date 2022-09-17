@@ -1,0 +1,386 @@
+[
+  {
+    "name": "Yasuo",
+    "cardCode": "01IO015"
+  },
+  {
+    "name": "Karma",
+    "cardCode": "01IO041"
+  },
+  {
+    "name": "Zed",
+    "cardCode": "01IO009"
+  },
+  {
+    "name": "Shen",
+    "cardCode": "01IO032"
+  },
+  {
+    "name": "Draven",
+    "cardCode": "01NX020"
+  },
+  {
+    "name": "Vladimir",
+    "cardCode": "01NX006"
+  },
+  {
+    "name": "Darius",
+    "cardCode": "01NX038"
+  },
+  {
+    "name": "Katarina",
+    "cardCode": "01NX042"
+  },
+  {
+    "name": "Lucian",
+    "cardCode": "01DE022"
+  },
+  {
+    "name": "Lux",
+    "cardCode": "01DE042"
+  },
+  {
+    "name": "Garen",
+    "cardCode": "01DE012"
+  },
+  {
+    "name": "Fiora",
+    "cardCode": "01DE045"
+  },
+  {
+    "name": "Jinx",
+    "cardCode": "01PZ040"
+  },
+  {
+    "name": "Teemo",
+    "cardCode": "01PZ008"
+  },
+  {
+    "name": "Heimerdinger",
+    "cardCode": "01PZ056"
+  },
+  {
+    "name": "Ezreal",
+    "cardCode": "01PZ036"
+  },
+  {
+    "name": "Anivia",
+    "cardCode": "01FR024"
+  },
+  {
+    "name": "Tryndamere",
+    "cardCode": "01FR039"
+  },
+  {
+    "name": "Braum",
+    "cardCode": "01FR009"
+  },
+  {
+    "name": "Ashe",
+    "cardCode": "01FR038"
+  },
+  {
+    "name": "Elise",
+    "cardCode": "01SI053"
+  },
+  {
+    "name": "Hecarim",
+    "cardCode": "01SI042"
+  },
+  {
+    "name": "Kalista",
+    "cardCode": "01SI030"
+  },
+  {
+    "name": "Thresh",
+    "cardCode": "01SI052"
+  },
+  {
+    "name": "Vi",
+    "cardCode": "02PZ008"
+  },
+  {
+    "name": "Gangplank",
+    "cardCode": "02BW032"
+  },
+  {
+    "name": "Miss Fortune",
+    "cardCode": "02BW022"
+  },
+  {
+    "name": "Fizz",
+    "cardCode": "02BW046"
+  },
+  {
+    "name": "Twisted Fate",
+    "cardCode": "02BW026"
+  },
+  {
+    "name": "Nautilus",
+    "cardCode": "02BW053"
+  },
+  {
+    "name": "Sejuani",
+    "cardCode": "02FR002"
+  },
+  {
+    "name": "Swain",
+    "cardCode": "02NX007"
+  },
+  {
+    "name": "Quinn",
+    "cardCode": "02DE006"
+  },
+  {
+    "name": "Maokai",
+    "cardCode": "02SI008"
+  },
+  {
+    "name": "Lee Sin",
+    "cardCode": "02IO006"
+  },
+  {
+    "name": "Riven",
+    "cardCode": "03NX007"
+  },
+  {
+    "name": "Tahm Kench",
+    "cardCode": "03BW004"
+  },
+  {
+    "name": "Aphelios",
+    "cardCode": "03MT217"
+  },
+  {
+    "name": "Diana",
+    "cardCode": "03MT056"
+  },
+  {
+    "name": "Soraka",
+    "cardCode": "03MT055"
+  },
+  {
+    "name": "Leona",
+    "cardCode": "03MT054"
+  },
+  {
+    "name": "Taric",
+    "cardCode": "03MT058"
+  },
+  {
+    "name": "Zoe",
+    "cardCode": "03MT009"
+  },
+  {
+    "name": "Aurelion Sol",
+    "cardCode": "03MT087"
+  },
+  {
+    "name": "Viktor",
+    "cardCode": "03PZ003"
+  },
+  {
+    "name": "Nocturne",
+    "cardCode": "03SI005"
+  },
+  {
+    "name": "Lulu",
+    "cardCode": "03IO002"
+  },
+  {
+    "name": "Shyvana",
+    "cardCode": "03DE011"
+  },
+  {
+    "name": "Trundle",
+    "cardCode": "03FR006"
+  },
+  {
+    "name": "Ekko",
+    "cardCode": "04PZ001"
+  },
+  {
+    "name": "Pyke",
+    "cardCode": "04BW005"
+  },
+  {
+    "name": "Irelia",
+    "cardCode": "04IO005"
+  },
+  {
+    "name": "Rek'Sai",
+    "cardCode": "04SH019"
+  },
+  {
+    "name": "Zilean",
+    "cardCode": "04SH039"
+  },
+  {
+    "name": "Taliyah",
+    "cardCode": "04SH073"
+  },
+  {
+    "name": "Azir",
+    "cardCode": "04SH003"
+  },
+  {
+    "name": "Akshan",
+    "cardCode": "04SH130"
+  },
+  {
+    "name": "Renekton",
+    "cardCode": "04SH067"
+  },
+  {
+    "name": "Sivir",
+    "cardCode": "04SH020"
+  },
+  {
+    "name": "Nasus",
+    "cardCode": "04SH047"
+  },
+  {
+    "name": "Lissandra",
+    "cardCode": "04FR005"
+  },
+  {
+    "name": "LeBlanc",
+    "cardCode": "04NX004"
+  },
+  {
+    "name": "Kindred",
+    "cardCode": "04SI005"
+  },
+  {
+    "name": "Viego",
+    "cardCode": "04SI055"
+  },
+  {
+    "name": "Malphite",
+    "cardCode": "04MT008"
+  },
+  {
+    "name": "Jarvan IV",
+    "cardCode": "04DE008"
+  },
+  {
+    "name": "Kennen",
+    "cardCode": "05BC058"
+  },
+  {
+    "name": "Tristana",
+    "cardCode": "05BC133"
+  },
+  {
+    "name": "Yuumi",
+    "cardCode": "05BC029"
+  },
+  {
+    "name": "Gnar",
+    "cardCode": "05BC161"
+  },
+  {
+    "name": "Veigar",
+    "cardCode": "05BC093"
+  },
+  {
+    "name": "Rumble",
+    "cardCode": "05BC088"
+  },
+  {
+    "name": "Ziggs",
+    "cardCode": "05BC163"
+  },
+  {
+    "name": "Poppy",
+    "cardCode": "05BC041"
+  },
+  {
+    "name": "Udyr",
+    "cardCode": "05FR013"
+  },
+  {
+    "name": "Ahri",
+    "cardCode": "05IO004"
+  },
+  {
+    "name": "Xerath",
+    "cardCode": "05SH014"
+  },
+  {
+    "name": "Sion",
+    "cardCode": "05NX001"
+  },
+  {
+    "name": "Nami",
+    "cardCode": "05BW005"
+  },
+  {
+    "name": "Jayce",
+    "cardCode": "05PZ022"
+  },
+  {
+    "name": "Caitlyn",
+    "cardCode": "05PZ006"
+  },
+  {
+    "name": "Senna",
+    "cardCode": "05SI009"
+  },
+  {
+    "name": "Pantheon",
+    "cardCode": "05MT003"
+  },
+  {
+    "name": "Galio",
+    "cardCode": "05DE009"
+  },
+  {
+    "name": "Annie",
+    "cardCode": "06NX012"
+  },
+  {
+    "name": "Evelynn",
+    "cardCode": "06RU025"
+  },
+  {
+    "name": "Bard",
+    "cardCode": "06RU001"
+  },
+  {
+    "name": "Jhin",
+    "cardCode": "06RU002"
+  },
+  {
+    "name": "Illaoi",
+    "cardCode": "06BW006"
+  },
+  {
+    "name": "Kai'Sa",
+    "cardCode": "06SH009"
+  },
+  {
+    "name": "Gwen",
+    "cardCode": "06SI012"
+  },
+  {
+    "name": "Jax",
+    "cardCode": "06RU008"
+  },
+  {
+    "name": "Kayn",
+    "cardCode": "06RU005"
+  },
+  {
+    "name": "Ornn",
+    "cardCode": "06FR011"
+  },
+  {
+    "name": "Norra",
+    "cardCode": "06BC015"
+  },
+  {
+    "name": "Master Yi",
+    "cardCode": "06IO008"
+  }
+]
