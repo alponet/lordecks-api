@@ -11,5 +11,6 @@ import { DecksService } from "../decks/decks.service";
   ],
   controllers: [MatchesController],
   providers: [MatchesService, DecksService],
+  exports: [MatchesService]
 })
 export class MatchesModule {}

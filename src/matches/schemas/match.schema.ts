@@ -35,6 +35,9 @@ export class PlayerSchema extends Document {
 export class InfoSchema extends Document {
   @Prop([PlayerSchema])
   players: PlayerSchema[];
+
+  @Prop()
+  game_type: String;
 }
 
 

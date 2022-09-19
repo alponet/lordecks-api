@@ -1,13 +1,11 @@
 import { MatchesService } from './matches.service';
 import { Match } from './schemas/match.schema';
 import { Body, Controller, Get, HttpStatus, Param, Post, Res } from "@nestjs/common";
-import { DecksService } from "../decks/decks.service";
 
 @Controller('matches')
 export class MatchesController {
   constructor(
-    private readonly matchesService: MatchesService,
-    private readonly decksService: DecksService
+    private readonly matchesService: MatchesService
   ) {}
 
   @Post()
@@ -36,13 +34,8 @@ export class MatchesController {
   @Get(":matchId/setArchetypes")
   async setArchetype(@Param('matchId') matchId: string): Promise<any> {
     this.matchesService.find(matchId).then(match => {
-      const playerDecks = match.info.players.map(p => p.deck_code);
-      let archetypes: string[][] = [];
-      for (let deckCode of playerDecks) {
-        const d = this.decksService.convertToDeck(deckCode.toString());
-        archetypes.push(this.decksService.getChampions(d));
-      }
-      return this.matchesService.setArchetypes(match, archetypes);
-    })
+      return this.matchesService.setArchetypes(match);
+    });
   }
+
 }
