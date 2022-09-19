@@ -21,21 +21,9 @@ export class MatchesController {
     return this.matchesService.findAll();
   }
 
-  @Get("one")
-  async findOne(): Promise<Match> {
-    return this.matchesService.findOne();
-  }
-
   @Get(":matchId")
   async find(@Param('matchId') matchId: string): Promise<Match> {
     return this.matchesService.find(matchId);
-  }
-
-  @Get(":matchId/setArchetypes")
-  async setArchetype(@Param('matchId') matchId: string): Promise<any> {
-    this.matchesService.find(matchId).then(match => {
-      return this.matchesService.setArchetypes(match);
-    });
   }
 
 }
