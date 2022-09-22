@@ -21,10 +21,6 @@ export class MatchesService {
     return this.matchModel.find().limit(20).exec();
   }
 
-  async findOne(): Promise<Match> {
-    return this.matchModel.findOne().exec();
-  }
-
   async find(matchId: string): Promise<Match> {
     return this.matchModel.findOne({ "metadata.match_id": matchId });
   }
