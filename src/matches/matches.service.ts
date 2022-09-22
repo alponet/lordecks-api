@@ -47,4 +47,34 @@ export class MatchesService {
     return match.save();
   }
 
+
+  getArchetypes(): Promise<string[][]> {
+    return this.matchModel.aggregate([
+      {
+        $match: {
+          "info.game_type": "Ranked",
+          "info.players.archetype": { $exists: true }
+        }
+      },
+      {
+        $unwind: "$info.players"
+      },
+      {
+        $group: {
+          _id: "$info.players.archetype",
+          count: { $sum: 1 }
+        }
+      },
+      {
+        $match: {
+          "count": {
+            $gt: 49
+          }
+        }
+      }
+    ])
+    .sort({ "count": -1 })
+    .exec();
+  }
+
 }

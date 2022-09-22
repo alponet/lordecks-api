@@ -21,6 +21,11 @@ export class MatchesController {
     return this.matchesService.findAll();
   }
 
+  @Get("archetypes")
+  async getArchetypes(): Promise<string[][]> {
+    return this.matchesService.getArchetypes();
+  }
+
   @Get(":matchId")
   async find(@Param('matchId') matchId: string): Promise<Match> {
     return this.matchesService.find(matchId);
