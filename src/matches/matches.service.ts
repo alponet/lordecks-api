@@ -62,7 +62,12 @@ export class MatchesService {
       {
         $group: {
           _id: "$info.players.archetype",
-          count: { $sum: 1 }
+          count: { $sum: 1 },
+          wins: {
+            $sum: {
+              $cond: [{ $eq: [ "$info.players.game_outcome", "win" ] }, 1, 0]
+            }
+          }
         }
       },
       {
