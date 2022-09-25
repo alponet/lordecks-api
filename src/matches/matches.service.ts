@@ -82,4 +82,46 @@ export class MatchesService {
     .exec();
   }
 
+
+  getPlayedDecks(archetype: string): Promise<string[][]> {
+    const archetypeArray = archetype.split(",");
+
+    return this.matchModel.aggregate([
+      {
+        $match: {
+          "info.game_type": "Ranked",
+          "info.players.archetype": { $exists: true },
+        }
+      },
+      {
+        $unwind: "$info.players"
+      },
+      {
+        $match: {
+          "info.players.archetype": archetypeArray
+        }
+      },
+      {
+        $group: {
+          _id: "$info.players.deck_code",
+          count: { $sum: 1 },
+          wins: {
+            $sum: {
+              $cond: [{ $eq: [ "$info.players.game_outcome", "win" ] }, 1, 0]
+            }
+          }
+        }
+      },
+      {
+        $match: {
+          "count": {
+            $gt: 9
+          }
+        }
+      }
+    ])
+    .sort({ "count": -1 })
+    .exec();
+  }
+
 }
