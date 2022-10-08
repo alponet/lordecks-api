@@ -51,13 +51,16 @@ export class MatchesService {
   getArchetypes(dateFrom?: string, dateTo?: string, minCount?: string): Promise<string[][]> {
     const minimalCount = minCount ? parseInt(minCount) : 50;
 
+    let dateFilter: { $gte?: any, $lt?: any } = {};
+    if (dateFrom) dateFilter.$gte = new Date(dateFrom);
+    if (dateTo) dateFilter.$lt = new Date(dateTo);
+
     return this.matchModel.aggregate([
       {
         $match: {
           "info.game_type": "Ranked",
           "info.players.archetype": { $exists: true },
-          ...dateFrom ? { "date": { $gte: new Date(dateFrom) }} : {},
-          ...dateTo ? { "date": { $lt: new Date(dateTo) }} : {}
+          ...Object.keys(dateFilter).length ? { "date": dateFilter } : {}
         }
       },
       {
