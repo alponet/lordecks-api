@@ -44,12 +44,12 @@ export class TasksService {
     let nextDay = new Date(date);
     nextDay.setDate(nextDay.getDate() + 1);
 
-    this.matchesService.getMatchesCount(date.toISOString()).then(total => {
+    this.matchesService.getMatchesCount(date.toISOString()).then(matchesCount => {
       this.matchesService.getArchetypes(date.toISOString(), nextDay.toISOString(), "1").then(archetypes => {
         const results = archetypes.map(archetype => {
           return {
             archetype: archetype._id,
-            playRate: archetype.count / total,
+            playRate: archetype.count / (matchesCount * 2),
             winRate: archetype.wins / archetype.count
           }
         });
