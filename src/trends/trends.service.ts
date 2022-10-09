@@ -35,4 +35,21 @@ export class TrendsService {
 
     return Promise.resolve();
   }
+
+
+
+  async getArchetypeTrends(archetype: string): Promise<Trend[]> {
+    let today = new Date();
+    let lastMonth = new Date(today);
+    lastMonth.setDate(lastMonth.getDate() - 30);
+    lastMonth.setUTCHours(0,0,0,0);
+
+    return this.trendsModel.find({
+      date: { $gte: lastMonth },
+      archetype: archetype.split(",")
+    })
+    .sort({ date: 1})
+    .exec();
+  }
+
 }
