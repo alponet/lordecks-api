@@ -48,7 +48,7 @@ export class MatchesService {
   }
 
 
-  getArchetypes(dateFrom?: string, dateTo?: string, minCount?: string): Promise<string[][]> {
+  getArchetypes(dateFrom?: string, dateTo?: string, minCount?: string): Promise<any[]> {
     const minimalCount = minCount ? parseInt(minCount) : 50;
 
     let dateFilter: { $gte?: any, $lt?: any } = {};
@@ -87,6 +87,18 @@ export class MatchesService {
     ])
     .sort({ "count": -1 })
     .exec();
+  }
+
+
+  getMatchesCount(dateFrom?: string, dateTo?: string): Promise<number> {
+    let dateFilter: { $gte?: any, $lt?: any } = {};
+    if (dateFrom) dateFilter.$gte = new Date(dateFrom);
+    if (dateTo) dateFilter.$lt = new Date(dateTo);
+
+    return this.matchModel.countDocuments({
+      "info.players.archetype": { $exists: true },
+      ...Object.keys(dateFilter).length ? { "date": dateFilter } : {}
+    }).exec();
   }
 
 

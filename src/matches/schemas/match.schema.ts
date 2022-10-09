@@ -44,6 +44,9 @@ export class InfoSchema extends Document {
 @Schema()
 export class Match extends Document {
   @Prop()
+  date: Date;
+
+  @Prop()
   metadata: MetadataSchema;
 
   @Prop()

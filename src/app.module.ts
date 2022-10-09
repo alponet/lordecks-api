@@ -7,6 +7,7 @@ import { MatchesModule } from './matches/matches.module';
 import { DecksModule } from "./decks/decks.module";
 import { ScheduleModule } from "@nestjs/schedule";
 import { ConfigModule, ConfigService } from "@nestjs/config";
+import { TrendsModule } from "./trends/trends.module";
 
 @Module({
   imports: [
@@ -21,7 +22,8 @@ import { ConfigModule, ConfigService } from "@nestjs/config";
     ScheduleModule.forRoot(),
     TasksModule,
     MatchesModule,
-    DecksModule
+    DecksModule,
+    TrendsModule
   ],
   controllers: [AppController],
   providers: [AppService],
