@@ -16,7 +16,7 @@ export class DecksController {
 
   @Post('cardError')
   reportCardError(@Body() body: { cardCode: string }): void {
-    console.error("cardError posted: " + body.cardCode);
+    console.error(new Date().toLocaleString() + ": cardError posted: " + body.cardCode);
   }
 
 }
